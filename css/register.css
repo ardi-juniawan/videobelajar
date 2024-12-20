@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    background-color: #FFFDF3;
+    font-family: "Lato", serif;
+}
+.header{
+    background-color: white;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.logo img{
+    width: 200px;
+    margin: 5px 0 0 50px;
+}
+.content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.login-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-login{
+    text-align: center;
+}
+.head-login h1{
+    color: #222325;
+}
+.head-login p{
+    color: #3A354161;
+    margin-top:-10px;
+}
+.login-wrapper{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+}
+.form-login{
+    width: 80%;
+    margin: 0 auto;
+}
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    color: #333333AD;
+    font-size: 14px;
+}
+.form-login label{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.form-login input{
+    height: 2rem;
+    margin-bottom: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    padding-left: 10px;
+}
+.red-label{
+    color: red !important;
+}
+.form-login a{
+    text-decoration: none;
+    color: #333333AD;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.form-login button{
+    border:none;
+    border-radius: 5px;
+    height: 2rem;
+    font-weight: bold;
+}
+.masuk-button{
+    background-color: #3ECF4C;
+    color: white;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+.daftar-button{
+    color:#3ECF4C;
+    background-color: #E2FCD9CC;
+    cursor: pointer;
+    width: 100%;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.divider::before,
+.divider::after{
+    content:'';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 5px;
+}
+.divider span{
+    font-weight:bold;
+}
+.sign-google{
+    width: 100%;
+    color: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    color: #333333AD;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.no-hp{
+    display: flex;
+    justify-content: space-between;
+}
+.region{
+    display: flex;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: 1px solid #3A35411F;
+    border-radius: 2px;
+}
+.flag{
+    margin: 0 !important;
+    background-color: #F4F5FA;
+}
+.flag img{
+    margin: 7px 5px 0 5px !important;
+    margin-top:0px;
+    width: 20px;
+    height: 16px;
+}
+.region select{
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+.number{
+    flex: 1;
+}
+.number input{
+    width: 100%;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 1024px) {
+    .login-wrapper{
+        width: 60%;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .login-wrapper{
+        width: 75%;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    .login-wrapper{
+        width: 90%;
+    }
+    
+}

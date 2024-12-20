@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Video Belajar</title>
+
+    <!-- Link CDN Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="assets/logo.png" alt="videobelajar">
+        </div>
+    </div>
+    <div class="content">
+        <div class="login-wrapper">
+            <div class="head-login">
+                <h2>Masuk ke Akun</h2>
+                <p>Yuk, daftarkan akunmu sekarang juga!</p>
+            </div>
+            <div class="form-login">
+                <form action="#">
+                    <label for="label-namalengkap">Nama Lengkap <span class="red-label">*</span></label>
+                    <input type="text" id="namalengkap" name="namalengkap">
+                    <label for="label-email">E-mail <span class="red-label">*</span></label>
+                    <input type="email" id="email" name="email">
+                    <label for="label-nohp">Nomor HP <span class="red-label">*</span></label>
+                    <div class="no-hp">
+                        <div class="region">
+                            <label for="flag" class="flag">
+                                <img src="assets/indonesia.png" alt="Indonesia">
+                            </label>
+                            <select name="kode" id="kode">
+                                <option value="+62">+62</option>
+                            </select>
+                        </div>
+                        <div class="number">
+                            <input type="number" id="nohp" name="nohp">
+                        </div>
+                    </div>
+                    <label for="label-katasandi">Kata Sandi <span class="red-label">*</span></label>
+                    <input type="password" id="password" name="password">
+                    <label for="label-konfirmasi-katasandi">Konfirmasi Kata Sandi <span class="red-label">*</span></label>
+                    <input type="password" id="confirmpassword" name="confirmpassword">
+                    <a href="#">Lupa password?</a>
+                    <button type="submit" class="masuk-button">Daftar</button>
+                </form>
+                <button type="button" class="daftar-button">Masuk</button>
+                <div class="divider">
+                    <span>atau</span>
+                </div>
+                <button type="button" class="sign-google"><i class="fa fa-google" aria-hidden="true"></i> Masuk dengan Google</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
