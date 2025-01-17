@@ -23,6 +23,9 @@ body{
     justify-content: flex-end;
     margin-right: 100px;
 }
+.mobile-menu{
+    display: none;;
+}
 .dropdown-kategori{
     position: relative;
     display: inline-block;
@@ -84,6 +87,8 @@ body{
     border-radius: 10px;
     padding: 0 70px;
     color: white;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .hero::before{
     position: absolute;
@@ -111,7 +116,7 @@ body{
 }
 .caption span{
     font-size: 15px;
-    font-weight: normal;
+    line-height: 0;
 }
 .button-hero button{
     background-color: #3ECF4C;
@@ -300,7 +305,7 @@ body{
 .banner-cta span{
     display: flex;
     justify-content: center;
-    padding: 0 250px;
+    padding: 0 50px;
 }
 .title-banner{
     margin-top: 100px;
@@ -309,7 +314,7 @@ body{
     font-weight: normal;
 }
 .title-banner-cta{
-    margin-top:-5px
+    margin-top:5px
 }
 .caption{
     font-weight: normal;
@@ -322,6 +327,7 @@ body{
     position:relative;
     width: 400px;
     height: 45px;
+    margin-top: 20px;
 }
 .form-banner-cta input{
     border: none;
@@ -347,6 +353,7 @@ body{
 .footer{
     display: flex;
     border-top: 1px solid rgb(226, 226, 226);
+    margin: 0 10px;
 }
 .footer-wrapper{
     display: flex;
@@ -404,7 +411,12 @@ body{
     padding: 10px;
     color: black;
 }
+
+/* Responsive */
 @media only screen and (max-width: 854px) {
+    .hero{
+        padding: 0 30px;
+    }
     .button-hero{
         margin-top:20px;
     }
@@ -451,18 +463,20 @@ body{
     .mid-navbar li{
         white-space: nowrap;
     }
+    .title-banner{
+        margin-top: 90px;
+    }
 }
 @media only screen and (max-width: 655px) {
+    .hero{
+        padding: 0 30px;
+    }
     .title{
         margin-top: 20px;
         font-size: 28px;
     }
     .caption{
         margin-top:-10px;
-    }
-    .hero,
-    .hero::before{
-        height: 450px;
     }
     .banner-cta span{
         padding:0 5px;
@@ -474,17 +488,25 @@ body{
         margin-top: 10px;
     }
     .form-banner-cta{
+        display: flex;
         flex-direction: column;
+        position: static;
+        z-index: 1 !important;
+        width: 350px;
     }
     .form-banner-cta input{
-        width: 92%;
         margin-bottom: 10px;
-        text-align: center;
+        box-sizing: border-box;
     }
     .form-banner-cta button{
         position: static;
+        margin: 0;
+        width: 100%;
     }
-    
+
+    .footer{
+       margin: 0 20px;     
+    }
     .top-footer{
         display: flex;
         flex-direction: column;
@@ -496,6 +518,12 @@ body{
         display: flex;
         flex-direction: column;
         margin:0 0 10px 0;
+    }
+    .list ul li::after{
+        content: ">";
+        opacity: 0.5;
+        margin-left: auto;
+        
     }
     .list ul li:first-of-type{
         display: flex;
@@ -514,5 +542,48 @@ body{
     .sosmed{
         border-radius: 100px;
         margin: 0 0 15px 0;
+    }
+
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .dropdown-kategori{
+        display: none;
+    }
+    .avatar{
+        display: none;
+    }
+
+}
+
+    @media only screen and (max-width: 440px) {
+        .hero{
+            height: 350px;
+        }
+        .hero::before{
+            height: 350px;
+        }
+        .title{
+            font-size: 20px;
+        }
+        .caption span{
+            font-size: 12px;
+        }
+        .button-hero{
+            margin-top: 30px;
+        }
+        .button-hero button{
+            font-size: 12px;
+        }
+        .banner-cta{
+            overflow: hidden;
+        }
+        .caption-banner-cta{
+            font-size: 12px;
+        }
+        .form-banner-cta{
+            width: 200px;
+        }
     }
 }
